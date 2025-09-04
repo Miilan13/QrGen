@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@tsparticles/engine": "^3.9.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.9.1",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles-slim": "^2.12.0"
+  }
+}
