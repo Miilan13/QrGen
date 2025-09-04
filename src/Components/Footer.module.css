@@ -1,0 +1,21 @@
+.footer {
+  width: 100%;
+  background: linear-gradient(90deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  color: #b3c7e6;
+  padding: 1.2rem 0 0.8rem 0;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  border-top: 2px solid #203a43;
+  box-shadow: 0 -2px 16px rgba(56,161,219,0.12);
+}
+.footer-link {
+  color: #38a1db;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: #2c5364;
+}

@@ -1,0 +1,120 @@
+/* --- Main background container --- */
+.signup-bg {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #02042b;
+}
+
+/* --- The main "glassmorphism" card --- */
+.signup-card {
+  background: rgba(15, 24, 78, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem 2rem;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.signup-title {
+  color: #e0eaff;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* --- Form specific styling --- */
+.signup-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+/* --- Input styles --- */
+.signup-input {
+  width: 100%;
+  margin: 0.4rem 0;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #1a2980;
+  font-size: 1.05rem;
+  background: #101c4d;
+  color: #e0eaff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.signup-input::placeholder {
+  color: #b3c7e680;
+}
+
+.signup-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 16px rgba(74, 144, 226, 0.2);
+}
+
+/* --- Error message style --- */
+.error-message {
+  color: #ff8a80; /* A light red for high contrast */
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+
+/* --- Main "Sign Up" button --- */
+.signup-btn {
+  background: linear-gradient(90deg, #4a90e2 0%, #2948ff 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2.2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.2);
+  transition: all 0.3s;
+}
+
+.signup-btn:hover {
+  box-shadow: 0 8px 32px rgba(74, 144, 226, 0.3);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* --- Helper links --- */
+.signup-links {
+    margin-top: 1.5rem;
+}
+
+.signup-link {
+    color: #b3c7e6;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.signup-link:hover {
+    color: #4a90e2;
+}
+
+/* --- Media query for smaller screens --- */
+@media (max-width: 600px) {
+  .signup-card {
+    max-width: 95vw;
+    padding: 2rem 1.5rem;
+  }
+}

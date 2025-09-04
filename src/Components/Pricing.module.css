@@ -1,0 +1,137 @@
+/* --- New dark blue gradient for the main background --- */
+.pricingBg {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(120deg, #02042b 0%, #0f184e 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px 1rem; /* Added padding for smaller screens */
+}
+
+/* --- Title color updated to a light blue for contrast --- */
+.pricingTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #e0eaff;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 24px rgba(74, 144, 226, 0.2);
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .pricingGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --- Card styles updated with new gradients and hover effects --- */
+.pricingCard {
+  background: linear-gradient(135deg, #101c4d 0%, #1a2980 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #1a2980;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricingCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(74, 144, 226, 0.2);
+  border-color: #4a90e2; /* Bright blue border on hover */
+}
+
+/* --- Highlighted card gets a more vibrant blue gradient --- */
+.pricingCardHighlight {
+  border-color: #4a90e2;
+  background: linear-gradient(135deg, #1a2980 0%, #2948ff 100%);
+  transform: scale(1.05); /* Make it stand out a bit more */
+}
+
+/* --- Text colors updated for readability --- */
+.planName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.7rem;
+}
+
+.planPrice {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #e0eaff;
+  margin-bottom: 1.5rem;
+}
+
+.planFeatures {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  width: 100%;
+  flex-grow: 1; /* Helps align buttons at the bottom */
+}
+
+.planFeatureItem {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #b3c7e6; /* This light blue was good, so we keep it */
+  margin-bottom: 0.8rem;
+  justify-content: flex-start;
+  padding-left: 20%;
+}
+
+.check {
+  color: #4a90e2; /* Accent blue for the checkmark */
+  font-size: 1.2rem;
+  margin-right: 0.7rem;
+}
+
+/* --- Buttons updated to the new blue palette --- */
+.planBtn {
+  background: transparent;
+  color: #e0eaff;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: auto; /* Pushes button to the bottom */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.planBtn:hover {
+  background: #4a90e2;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* --- Highlighted button is solid and vibrant --- */
+.planBtnHighlight {
+  background: #4a90e2;
+  color: #ffffff;
+  border-color: #4a90e2;
+}
+
+.planBtnHighlight:hover {
+    background: #2948ff;
+    border-color: #2948ff;
+}
